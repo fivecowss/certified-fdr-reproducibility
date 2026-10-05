@@ -25,8 +25,14 @@ def test_complete_lock_matches_environment_specification() -> None:
 
 def test_container_and_ci_pin_the_reference_python() -> None:
     dockerfile = (ROOT / "Dockerfile").read_text(encoding="utf-8")
+    dockerignore = {
+        line.strip()
+        for line in (ROOT / ".dockerignore").read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    }
     workflow = (ROOT / ".github/workflows/ci.yml").read_text(encoding="utf-8")
     assert "python:3.11.15-slim-bookworm" in dockerfile
+    assert ".github" not in dockerignore
     assert 'python-version: "3.11.15"' in workflow
     assert "scripts/ci_check.py" in dockerfile
     assert "scripts/ci_check.py" in workflow
