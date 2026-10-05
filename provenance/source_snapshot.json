@@ -1,0 +1,78 @@
+{
+  "label_only_transformations": {
+    "__init__.py": [
+      "package description",
+      "version label"
+    ],
+    "extraction.py": [
+      "module docstring"
+    ],
+    "full_run.py": [
+      "module docstring"
+    ],
+    "ledger.py": [
+      "module docstring"
+    ],
+    "moderate_dimension_stress.py": [
+      "module docstring and provenance field label"
+    ],
+    "publication_rendering.py": [
+      "module docstring"
+    ],
+    "scientific_rendering.py": [
+      "module docstring"
+    ],
+    "summary.py": [
+      "module docstring"
+    ],
+    "supplemental_analysis.py": [
+      "module docstring"
+    ],
+    "supplemental_publication_rendering.py": [
+      "module docstring and table caption"
+    ],
+    "supplemental_rendering.py": [
+      "module docstring"
+    ],
+    "supplemental_routing.py": [
+      "module docstring and explanatory comment"
+    ],
+    "weights.py": [
+      "module docstring"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "scientific_logic_changed": false,
+  "scientific_source_sha256": {
+    "__init__.py": "f5d8df99a248cbb90a7eaba74e67363d53b6060fef840611311e9efd71eb745c",
+    "certification.py": "2a6f91ab8105aa109eb31cd59415c7234567bece41c1d21d79ed3a3a99249f47",
+    "covariance.py": "1f45e575aace19ec2b57f20f9991424ed2c96d7b07226eac577cb2e0863f81fe",
+    "dry_run.py": "28726a8552d0e976c9f85b36bede0ad458f7ffaa8ceb3d46487f208dde60d53c",
+    "extraction.py": "d0bc20e6c64a50e8d799140b297a8509fa9c367d7a22b02efa44e8e7968f8b0a",
+    "full_run.py": "9d967c31504121183fde86b32b85e773fe2ab5510ed84eb4d5abb4c3ea16059f",
+    "hbn.py": "bc97d97de444cedbe3526b0dd6a6c3fbbcca290104860776a6f37e1d94fefb27",
+    "hbn_application.py": "47cac367888822565f4fc19628a934d55397a6b59f60f6a1aba39003482ed29f",
+    "hbn_audit.py": "b2e048c53f29572df5b562dca8cf14d07e61a9d759283de54eee4bef93e989b7",
+    "hbn_dw_audit.py": "b83b41c91f0bd0e6657ff362dd7c5fe5389452745cb4b9d1ceeea27eadca5153",
+    "hbn_execution.py": "d51152355eba501d53e4943bd5afb945156a93bdb0f2dcee83b396432684b2a2",
+    "ledger.py": "84ac1b0a634a2f101e1a599f8bec58a9ad6b0e8a3b9967abdc8c52c35b1b8322",
+    "metrics.py": "d46d82e9a0658c87ec16d6235ee30443a447d5b611b5342604e1033dd0d0f7ba",
+    "moderate_dimension_analysis.py": "13a9b7bb809b7bda86f0bcfd3b9e0944cf49013043a845c195402dd17c839ffd",
+    "moderate_dimension_publication.py": "53f3261a6ba1658ed02eb8ddd84e480667ff7621ccf392dbdc2e1de752d1d7ea",
+    "moderate_dimension_rendering.py": "410e2d80ac3a5643956172ba7452359c62104e50e9907ec273d0a3eea2e7b322",
+    "moderate_dimension_stress.py": "534ff0842652e61d6b606b03bc8ebde6d5388e1b6fdb89a54b817beddbb85d28",
+    "monte_carlo.py": "4117fdd6e3d14b7278a4487a41892bf9240000fc37d079f5059edebc8a710e88",
+    "procedures.py": "19ed4744947947b22fd079662a7404e5f8ce35c2da36c66b60540eddf082d14f",
+    "publication_rendering.py": "dd6d4b466dcf6f33ac463f107b8d63f26010bc0bcaac3fa479811f22c655a17c",
+    "rendering.py": "98b5a77d0832fab0c3dd74c7a604d335a1bc34b2aa502f370496ddf4ebfa1a76",
+    "scientific_rendering.py": "b0f607dc90f756a7a7bba44cbcac92469a3002e4f26812393c0217e08eb4552a",
+    "summary.py": "18089244a2ec4e98ac1a069c26a83da418aec23a4c813ebe2c9c8dfcf6a7798a",
+    "supplemental_analysis.py": "5e2973c53ad200a1c6f5a72eb9d25aa23cbb21f06d19cd7bd4af5ccf3e02de89",
+    "supplemental_publication_rendering.py": "717b7f9d532def7767b05bd5418d2f84ae3dfd0ff52f4df2e223653cd3d06383",
+    "supplemental_rendering.py": "7c0436e653756e359cedc954fec0b7be1428dc30d142f1ea2c79d44f2c47be89",
+    "supplemental_routing.py": "a9724148c715cd6331e26116b3dace907a54ae07700cf34b29efd270bc090998",
+    "weights.py": "d780ece14cf4055e37eb393b0eec812033679e68477dad20392aaabee86acf67"
+  },
+  "source_snapshot_archive_sha256": "38c61d076b5c86d616a744a432f6778b92e1c1db554224da5df30d0dac07e19d",
+  "source_snapshot_commit": "c2ef09f04be91afa9cee79a54f16b609ffa047d9"
+}

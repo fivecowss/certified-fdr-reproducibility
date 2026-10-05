@@ -1,0 +1,177 @@
+{
+  "execution": {
+    "dry_run_repetitions": 2,
+    "dry_run_workers": 2,
+    "full_workers": 8,
+    "inspect_scientific_results_before_freeze": false,
+    "master_seed": 20260915,
+    "module_a_chunk_size": 2000,
+    "module_b_chunk_size": 500,
+    "rng": {
+      "audit_fraction": 0.2,
+      "audit_master_seed": 398003952,
+      "audit_seed_derivation": "integer value of first eight hex digits of theory commit 17b90ef0",
+      "batch_sampler_primary_use": false,
+      "common_random_numbers_across_eta": true,
+      "granularity": "replication",
+      "parallel_order_invariant": true,
+      "primary_master_seed": 20260915,
+      "semantic_key": "master_seed|data_configuration_id|replication|stream",
+      "wishart_mode": "one_exact_draw_per_replication"
+    }
+  },
+  "module_a": {
+    "beta": 0.01,
+    "d": [
+      5,
+      20,
+      100
+    ],
+    "enabled": true,
+    "full_repetitions_per_configuration": 200000,
+    "gamma": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "laws": {
+      "boundary": "first pair correlation equals 0; remaining pairs equal +gamma",
+      "invalid": "first pair correlation equals -gamma; remaining pairs equal +gamma",
+      "valid_interior": "all pair correlations equal +gamma"
+    },
+    "n_rounding": "ceiling",
+    "n_upper_multipliers": [
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "name": "certificate_only_iut",
+    "sampler": "independent_2x2_blocks_exact_chisquare"
+  },
+  "module_b": {
+    "N_C": 5000,
+    "N_T": 100,
+    "N_W": 100,
+    "activity_clip": [
+      0.25,
+      4.0
+    ],
+    "beta": 0.01,
+    "boundary_loading_index_zero_based": 19,
+    "common_random_numbers": {
+      "across_eta": true,
+      "across_methods": true,
+      "across_noncentrality": false,
+      "across_regimes": false
+    },
+    "d": 190,
+    "enabled": true,
+    "eta": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "full_repetitions_per_sensitivity": 100000,
+    "full_repetitions_primary": 200000,
+    "learning_noncentrality_matches_testing": true,
+    "m": 20,
+    "methods": [
+      "BY_q",
+      "wBY_q",
+      "wBH_q_diagnostic",
+      "Cert_wBY",
+      "Cert_BY",
+      "sign_oracle",
+      "old_both_q_internal"
+    ],
+    "name": "end_to_end_algorithm_1",
+    "nonnull_indices_zero_based": [
+      0,
+      1,
+      10,
+      11
+    ],
+    "nonnull_proportion": 0.2,
+    "one_factor_loading_magnitude": 0.5,
+    "pair_set": "all_i_less_than_j",
+    "primary_noncentrality": 2.0,
+    "q": 0.1,
+    "regimes": [
+      "valid",
+      "boundary",
+      "invalid"
+    ],
+    "sensitivity_noncentrality": [
+      1.5,
+      2.5
+    ],
+    "testing_sidedness": "one_sided_upper"
+  },
+  "module_c": {
+    "N_C": 682,
+    "N_C_rule": "sum floor(n_D_C,stratum/2) over acquisition strata",
+    "N_T": 292,
+    "N_W": 292,
+    "activation_state": "blocked_until_audit_contract_and_overlay_are_frozen",
+    "activity_clip": [
+      0.25,
+      4.0
+    ],
+    "beta": 0.01,
+    "certification_sampler": "exact Gaussian Wishart cross-moment sampler",
+    "claim": "theorem-exact Gaussian bridge conditional on the D_W-frozen correlation geometry",
+    "d": 45,
+    "eta": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "full_repetitions": 100000,
+    "m": 10,
+    "methods": [
+      "BY_q",
+      "wBY_q",
+      "wBH_q_diagnostic",
+      "Cert_wBY",
+      "Cert_BY",
+      "sign_oracle",
+      "old_both_q_internal"
+    ],
+    "nonnull_indices_zero_based": [
+      0,
+      1
+    ],
+    "primary_noncentrality": 2.0,
+    "q": 0.1,
+    "score_sampler": "multivariate Gaussian with frozen correlation",
+    "sensitivity_noncentrality": [
+      1.5,
+      2.5
+    ],
+    "status": "activated"
+  },
+  "schema_version": "1.0.0",
+  "source_snapshot_commit": "c2ef09f04be91afa9cee79a54f16b609ffa047d9",
+  "status": "frozen",
+  "theory": {
+    "aggressive_level": "q",
+    "fallback_level": "(q-beta)/(1-beta)",
+    "git_commit": "17b90ef0a5a660be9f0ea1ba3c0bd1c8567fda92",
+    "pdf_sha256": "59b9b785a2ce8f2a46d07abf312a3b426804c6ab012bb9655d49d71a35558f20",
+    "tau_formula": "2*sqrt(log(1/beta)/N_C)+2*log(1/beta)/N_C",
+    "tex_sha256": "77fcc09303e9ac48eb856cafc26f8de7e9255e3481d21de0f35559d9035cce57",
+    "version": "v6.1"
+  },
+  "uncertainty": {
+    "bounded_range": [
+      0.0,
+      1.0
+    ],
+    "certificate_acceptance_interval": "Clopper-Pearson exact equal-tailed",
+    "confidence": 0.95,
+    "fdp_power_interval": "Hoeffding-Bonferroni bounded-mean",
+    "multiplicity_family": "all displayed cells within each prespecified figure panel or table block",
+    "separate_theoretical_and_monte_carlo_uncertainty": true
+  }
+}

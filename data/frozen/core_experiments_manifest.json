@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/aggregation_manifest.schema.json",
+  "analysis_commit": "19c485c34fcfb3a5efbebd93e126509c707dba09",
+  "analysis_tag": "phase8-analysis-freeze-v1",
+  "chunk_count": 19800,
+  "complete_grid_verified": true,
+  "configuration_counts": {
+    "A": 108,
+    "B": 27,
+    "C": 9
+  },
+  "execution_commit": "fd2c1191ad75ed0be8900d8cbdbf8f19bb69f9af",
+  "extraction_plan_sha256": "134d56b57e5f82ce26d9ddd634f084484198391eaab42ea6eabc99af8056ee31",
+  "input_artifact_set_sha256": "6735e0ed34c3687b9c3c9b00b5a3c71f9fe7993d6a82a5f68242c806467512e2",
+  "record_count": 26100000,
+  "run_kind": "primary",
+  "schema_version": "1.0.0",
+  "scientific_results_included": true,
+  "status": "SEALED",
+  "summary_compressed_sha256": "7194cf3102e6bce97afae00dfc9987d5e3d4484d3513cd70bfe170acabe3d7e2",
+  "summary_file": "phase8_primary_summary.jsonl.gz",
+  "summary_record_count": 360,
+  "summary_record_schema_sha256": "afc3be05bb513b315ead1c3c838ff1b328ec458f6849c595f42ba5f638ca5456",
+  "summary_uncompressed_sha256": "f8dc9f68d9c07678c0aebb490443aa85049b88318ddd9b1c0614ea4a0a230daa",
+  "theoretical_and_monte_carlo_uncertainty_separated": true
+}

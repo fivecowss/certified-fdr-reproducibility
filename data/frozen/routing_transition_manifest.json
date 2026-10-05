@@ -1,0 +1,20 @@
+{
+  "$schema": "../../schemas/supplemental_aggregation_manifest.schema.json",
+  "analysis_commit": "989ce49034429e1d415fd3c9d0cecce504d855fc",
+  "analysis_plan_sha256": "cc4d24e9624ddef0d87fcaad8115dbcc27654d28fab07ce335368ac099086e32",
+  "analysis_tag": "phase8-supplemental-analysis-freeze-v1",
+  "chunk_count": 4000,
+  "complete_grid_verified": true,
+  "execution_tag": "phase8-supplemental-execution-freeze-v1",
+  "input_artifact_set_sha256": "cf5bc68215a674050338fb43dd103628b564b910a627b94475684a3368c9817a",
+  "record_count": 2000000,
+  "run_kind": "supplemental",
+  "schema_version": "1.0.0",
+  "status": "SEALED",
+  "summary_compressed_sha256": "76ed40fef2c34e3441a679ef79c8d8dca761396a5aaaaf08055519b34d60eff5",
+  "summary_file": "phase8_supplemental_summary_v1.jsonl.gz",
+  "summary_record_count": 106,
+  "summary_record_schema_sha256": "38681b08e13b44b5f89acfb25fceb08773840b1168d6ebbd3db6ee1083255267",
+  "summary_uncompressed_sha256": "3ef7fd2522065af649ce641e0e01a458f52db6e11cf552e9a997d56b8e729ab1",
+  "theoretical_and_monte_carlo_uncertainty_separated": true
+}

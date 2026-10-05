@@ -1,0 +1,20 @@
+{
+  "files": {
+    "data/frozen/core_experiments_manifest.json": "39276375e543ac38b7ab8d8671de4154939ca3c69f5d445bcf44a1f956eaa75f",
+    "data/frozen/core_experiments_summary.jsonl.gz": "7194cf3102e6bce97afae00dfc9987d5e3d4484d3513cd70bfe170acabe3d7e2",
+    "data/frozen/hbn_observed_application.jsonl.gz": "05753513e33569826bfa3c99bfd1ad340f3d0c6149e3cd4727ae2f8d2a9608e3",
+    "data/frozen/moderate_dimension_manifest.json": "c46445f40320e4c5c9b057395d80d9583948727da4d989cae0e71919b76abe07",
+    "data/frozen/moderate_dimension_summary.jsonl.gz": "c26ad14d3a9e3010de62d731e52ca25cc56d0e2baaea583a8b7f89cd4b3ada87",
+    "data/frozen/routing_transition_manifest.json": "b5c7a84e9d727c4de8f46ec724aee4ac1d5f0d0101484efb8a75e1c2b082f042",
+    "data/frozen/routing_transition_summary.jsonl.gz": "76ed40fef2c34e3441a679ef79c8d8dca761396a5aaaaf08055519b34d60eff5"
+  },
+  "row_counts": {
+    "core_experiments": 360,
+    "hbn_observed_application": 1,
+    "moderate_dimension": 144,
+    "routing_transition": 106
+  },
+  "schema_version": "1.0.0",
+  "scientific_values_changed": false,
+  "status": "frozen"
+}

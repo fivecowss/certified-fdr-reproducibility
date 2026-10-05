@@ -1,0 +1,29 @@
+{
+  "figure_1": {
+    "canvas_inches": [
+      6.75,
+      4.1
+    ],
+    "filename": "fig_routing_transition.pdf",
+    "layout": "full_width_three_panel"
+  },
+  "figure_2": {
+    "canvas_inches": [
+      3.25,
+      4.2
+    ],
+    "filename": "fig_certificate_calibration.pdf",
+    "layout": "single_column_vertical_three_panel"
+  },
+  "figure_3": {
+    "canvas_inches": [
+      3.25,
+      4.6
+    ],
+    "filename": "fig_moderate_dimension_stress.pdf",
+    "layout": "single_column_vertical_three_panel"
+  },
+  "schema_version": "1.0.0",
+  "scientific_values_changed": false,
+  "status": "frozen"
+}

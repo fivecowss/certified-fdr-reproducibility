@@ -1,0 +1,147 @@
+{
+  "analysis": {
+    "figure": {
+      "filename": "fig_moderate_dimension_stress_v1.pdf",
+      "panels": {
+        "A": "certificate acceptance versus categorical m by normalized margin",
+        "B": "mean FDP versus categorical m for Cert-wBY and direct wBY",
+        "C": "paired mean-power difference Cert-wBY minus direct wBY versus categorical m"
+      },
+      "vector_pdf": true
+    },
+    "summary": {
+      "certificate_rows": 9,
+      "method_metric_rows": 126,
+      "method_metrics": [
+        "mean_fdp",
+        "mean_power"
+      ],
+      "paired_power_contrast_rows": 9,
+      "reported_methods": [
+        "BY_q",
+        "wBY_q",
+        "wBH_q_diagnostic",
+        "Cert_wBY",
+        "Cert_BY",
+        "sign_oracle",
+        "old_both_q_internal"
+      ],
+      "reported_rejection_fraction": false,
+      "total_rows": 144
+    },
+    "table": {
+      "filename": "tab_moderate_dimension_stress_v1.tex",
+      "rejection_fraction_column": false,
+      "row_count": 9
+    },
+    "uncertainty": {
+      "certificate": {
+        "confidence": 0.95,
+        "family_size": 1,
+        "method": "Clopper-Pearson exact equal-tailed",
+        "scope": "pointwise per configuration"
+      },
+      "mean_fdp": {
+        "confidence": 0.95,
+        "family_size": 63,
+        "method": "Hoeffding-Bonferroni",
+        "range": [
+          0,
+          1
+        ]
+      },
+      "mean_power": {
+        "confidence": 0.95,
+        "family_size": 63,
+        "method": "Hoeffding-Bonferroni",
+        "range": [
+          0,
+          1
+        ]
+      },
+      "monte_carlo_intervals_are_theoretical_guarantees": false,
+      "paired_power_difference": {
+        "confidence": 0.95,
+        "contrast": "Cert_wBY-wBY_q",
+        "family_size": 9,
+        "method": "paired bounded-difference Hoeffding-Bonferroni",
+        "range": [
+          -1,
+          1
+        ]
+      }
+    }
+  },
+  "classification": "prespecified moderate-dimensional downstream stress test",
+  "design": {
+    "N_C_rule": "smallest n>=1 with completeness_margin(n,d,0.01)<=completeness_margin(5000,190,0.01)",
+    "N_T": 100,
+    "N_W": 100,
+    "base_loading": 0.5,
+    "beta": 0.01,
+    "chunk_size": 500,
+    "eta": 1.0,
+    "expected_N_C": {
+      "100": 5967,
+      "20": 5000,
+      "50": 5559
+    },
+    "loading_rule": "lambda[0:m-1]=0.5; lambda[m-1]=(normalized_margin*Delta)/0.5",
+    "m": [
+      20,
+      50,
+      100
+    ],
+    "module": "MD_STRESS",
+    "noncentrality": 2.0,
+    "nonnull_rule": "b=m/10; {0,...,b-1} union {m/2,...,m/2+b-1}",
+    "normalized_margin": [
+      -0.5,
+      0.5,
+      1.25
+    ],
+    "pair_set": "global_all_pairs",
+    "q": 0.1,
+    "repetitions_per_configuration": 200000,
+    "score_generation": "one Gaussian score vector per learning/testing split; N_W and N_T are inherited Module E design labels"
+  },
+  "full_simulation_authorized": true,
+  "interpretation": {
+    "label": "moderate-dimensional downstream stress test",
+    "real_data_superiority_claim": false,
+    "report_every_prespecified_cell": true,
+    "theorem_validation_claim": false,
+    "uniform_power_dominance_claim": false
+  },
+  "methods": [
+    "BY_q",
+    "wBY_q",
+    "wBH_q_diagnostic",
+    "Cert_wBY",
+    "Cert_BY",
+    "sign_oracle",
+    "old_both_q_internal"
+  ],
+  "oracle_comparison_domain": "normalized_margin<0 or normalized_margin>=1",
+  "rng": {
+    "addressing": "data_configuration_id, replication_id, stream_name",
+    "master_seed": 2026092401,
+    "semantic_namespace": "moderate_dimension_stress_v1",
+    "streams": [
+      "learning",
+      "certification",
+      "testing"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "source_routing_commit": "989ce49034429e1d415fd3c9d0cecce504d855fc",
+  "source_snapshot_commit": "c2ef09f04be91afa9cee79a54f16b609ffa047d9",
+  "status": "frozen",
+  "storage": {
+    "gzip_compresslevel": 6,
+    "ledger_format": "deterministic gzip JSONL",
+    "manifest_per_chunk": true,
+    "overwrite": false,
+    "result_root_name": "moderate_dimension_stress"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "classification": "prespecified routing-transition simulation",
+  "design": {
+    "N_C": 5000,
+    "N_T": 100,
+    "N_W": 100,
+    "base_loading": 0.5,
+    "beta": 0.01,
+    "chunk_size": 500,
+    "d": 190,
+    "eta": 1.0,
+    "loading_rule": "lambda[0:19]=0.5; lambda[19]=(normalized_margin*Delta)/0.5",
+    "m": 20,
+    "module": "E",
+    "noncentrality": 2.0,
+    "nonnull_indices_zero_based": [
+      0,
+      1,
+      10,
+      11
+    ],
+    "normalized_margin": [
+      -1.5,
+      -1.0,
+      -0.5,
+      -0.25,
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "pair_set": "global",
+    "q": 0.1,
+    "repetitions_per_configuration": 200000,
+    "varied_loading_index_zero_based": 19
+  },
+  "full_simulation_authorized": true,
+  "methods": [
+    "BY_q",
+    "wBY_q",
+    "wBH_q_diagnostic",
+    "Cert_wBY",
+    "Cert_BY",
+    "sign_oracle",
+    "old_both_q_internal"
+  ],
+  "rng": {
+    "addressing": "configuration_id, replication_id, stream_name",
+    "master_seed": 2026091601
+  },
+  "schema_version": "1.0.0",
+  "source_snapshot_commit": "c2ef09f04be91afa9cee79a54f16b609ffa047d9",
+  "status": "frozen",
+  "uncertainty": {
+    "bounded_means": "Hoeffding-Bonferroni, family fixed before execution",
+    "certificate": "Clopper-Pearson exact equal-tailed, marginal per cell",
+    "paired_contrasts": "bounded-difference Hoeffding-Bonferroni on [-1,1]",
+    "theoretical_guarantees_are_not_monte_carlo_intervals": true
+  }
+}
