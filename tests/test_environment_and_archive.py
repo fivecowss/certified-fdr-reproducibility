@@ -33,6 +33,9 @@ def test_container_and_ci_pin_the_reference_python() -> None:
     workflow = (ROOT / ".github/workflows/ci.yml").read_text(encoding="utf-8")
     assert "python:3.11.15-slim-bookworm" in dockerfile
     assert ".github" not in dockerignore
+    assert workflow.count("runs-on: ubuntu-24.04") == 2
+    assert workflow.count("actions/checkout@v5") == 2
+    assert "actions/setup-python@v6" in workflow
     assert 'python-version: "3.11.15"' in workflow
     assert "scripts/ci_check.py" in dockerfile
     assert "scripts/ci_check.py" in workflow

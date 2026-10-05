@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   python-validation:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     env:
       PYTHONDONTWRITEBYTECODE: "1"
@@ -21,8 +21,8 @@ jobs:
       MKL_NUM_THREADS: "1"
       NUMEXPR_NUM_THREADS: "1"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11.15"
           cache: pip
@@ -35,10 +35,10 @@ jobs:
         run: python scripts/ci_check.py
 
   container-validation:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Build container
         run: docker build --tag certified-fdr-reproducibility:ci .
       - name: Run container checks
