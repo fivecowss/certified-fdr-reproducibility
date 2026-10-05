@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen",
+  "execution_layer_commit": "6ee23a6d1462ecf385065c412c8e1864794e1214",
+  "execution_layer_manifest_sha256": "a4931ddba3e668a8d95d2b28566573d428050f3080d4534051745e0602ae4620",
+  "reference_python": "3.11.15",
+  "reference_machine": "arm64",
+  "locked_distribution_count": 19,
+  "scientific_metrics_changed": false,
+  "full_simulation_rerun": false,
+  "files": {
+    ".dockerignore": "578cc0847b29c1b756c8148ff07336e623d9b068354c7cccc5f564460bbd71ec",
+    ".github/workflows/ci.yml": "9644718998051958c7df7e31146b10725cbb461058e965d01005d2e2aca94005",
+    ".python-version": "db82937e1f1830581a9553c7814f5c5fcacb6dfdef8310b43e9a812c887acaf5",
+    "Dockerfile": "2b2bf3b5daa751d77668215ff78d784d908c6e26a7f66f11b41b489f3a4227ec",
+    "docs/ARTIFACT_PACKAGING.md": "51983cc006a201e149427cca9887f9351102ca4e92362cc9452f53551fad21a2",
+    "environment/environment.json": "14afc91e7b1c2fbb1de7d37eab1d6617f3e7c588627b343b1f763e0a215331fa",
+    "environment/requirements-lock.txt": "4615835bfb8c9239b37b369558c3303e4c42933637755588f85cc6597abc8979",
+    "scripts/build_review_archive.py": "bb8d6e56826aac5b0acc08e1c75af0f7adb8e67f1c7e14c22efa4445fa6088be",
+    "scripts/ci_check.py": "1038e0bcb3273c0e8cbc78cd561185bff657ca131bb25943665743216c809774",
+    "scripts/validate_environment.py": "1191bc45a04350a879e484128da144bfe6a7a2ac81a3d710ebc78575bac5bd71",
+    "tests/test_environment_and_archive.py": "5882900425ccfe4ed3ce19c3d6a89f4e58517447652981fa01b5dbd119408b8b"
+  }
+}

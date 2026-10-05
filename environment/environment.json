@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen",
+  "reference_commit": "6ee23a6d1462ecf385065c412c8e1864794e1214",
+  "reference_platform": {
+    "machine": "arm64",
+    "python": "3.11.15"
+  },
+  "python": "3.11.15",
+  "packages": {
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.1",
+    "iniconfig": "2.3.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6",
+    "packaging": "26.3",
+    "pandas": "2.3.3",
+    "pillow": "12.3.0",
+    "pluggy": "1.6.0",
+    "Pygments": "2.21.0",
+    "pyparsing": "3.3.3",
+    "pytest": "9.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.5",
+    "scipy": "1.17.1",
+    "six": "1.17.0",
+    "tzdata": "2026.5"
+  },
+  "lock_scope": "complete installed dependency closure excluding the editable local project and packaging tools",
+  "container_base": "python:3.11.15-slim-bookworm",
+  "scientific_metrics_changed": false
+}
