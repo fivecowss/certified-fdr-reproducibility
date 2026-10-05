@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen",
+  "artifact_bootstrap_commit": "39c2cb2375ebb3d9814efecfd299d86f4d97b4f3",
+  "scientific_source_snapshot_commit": "c2ef09f04be91afa9cee79a54f16b609ffa047d9",
+  "bootstrap_manifest_sha256": "207a2d0296104327a9e11f8283b5d46a98034904376177321d6145c4c73af3da",
+  "scientific_metrics_changed": false,
+  "observed_hbn_rerun_included": false,
+  "hbn_gaussian_bridge_rerun_included": true,
+  "files": {
+    "configs/full_execution.json": "aeea89d733041af8b64ac95d979ac43ae96f29f7e5fdec068a929e1f12fcae88",
+    "docs/FULL_EXECUTION.md": "538a70ebc80846e3d17aa307033c25066c7a7d3158357b0bec6ba4b8dcb1fc0a",
+    "scripts/aggregate_full.py": "0c16a8dff2741ffc63f9b8e7d7b44e65da6181e5ceeb70933e1789c0078c9d89",
+    "scripts/compare_frozen.py": "071a133cbebb638fef5502a6fa6d838ca04ee198ae8650c83b8081d62a17fb08",
+    "scripts/run_chunk.py": "79d4df0aa2bc1ae543d7d253bc7226667794d4b215cc9cb60731a3da4b74a976",
+    "scripts/run_full.py": "15e47d80c90e17ca2e3613a266b0364c3eb9556e76d8b026e103e3d5c5ac2183",
+    "src/certified_fdr/portable_aggregation.py": "1bb1ce6b145f54799648dfb584cbcf501e5d73c43d1281190a4b02fe6f568327",
+    "src/certified_fdr/portable_execution.py": "9a22e36f81eb1a171400b4f39aadc49a9683069c2175435f8cb22b31ab51497a",
+    "tests/test_portable_execution.py": "525293c35b29df5bf5c027bd96cf10ffb50ee51e3f09a34a0a33951934d33d76"
+  }
+}

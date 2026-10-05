@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen",
+  "experiments": {
+    "core-A": {
+      "configuration_count": 108,
+      "chunk_size": 2000,
+      "chunk_count": 10800,
+      "record_count": 21600000
+    },
+    "core-B": {
+      "configuration_count": 27,
+      "chunk_size": 500,
+      "chunk_count": 7200,
+      "record_count": 3600000
+    },
+    "core-C": {
+      "configuration_count": 9,
+      "chunk_size": 500,
+      "chunk_count": 1800,
+      "record_count": 900000
+    },
+    "routing-transition": {
+      "configuration_count": 10,
+      "chunk_size": 500,
+      "chunk_count": 4000,
+      "record_count": 2000000
+    },
+    "moderate-dimension": {
+      "configuration_count": 9,
+      "chunk_size": 500,
+      "chunk_count": 3600,
+      "record_count": 1800000
+    }
+  },
+  "complete_run": {
+    "chunk_count": 27400,
+    "record_count": 29900000
+  },
+  "output": {
+    "format": "deterministic gzip JSONL with one JSON sidecar per chunk",
+    "gzip_compresslevel": 6,
+    "overwrite": false,
+    "resume_requires_valid_ledger_manifest_pair": true
+  },
+  "scientific_metrics_printed_during_execution": false
+}
